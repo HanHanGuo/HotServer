@@ -23,10 +23,15 @@ public class ServerConstant {
 	/**
 	 * 服务器空间路基
 	 */
-	public static String PATH = "D:\\templet\\fish_33_vuejsadmin_nixon";
+	public static String PATH = "D:\\templet\\";
 	
 	/**
 	 * 默认主页
 	 */
 	public static String DEFAULT_INDEX = "index.html";
+	
+	/**
+	 * 服务器名称
+	 */
+	public final static String SERVER = "HotServer";
 }

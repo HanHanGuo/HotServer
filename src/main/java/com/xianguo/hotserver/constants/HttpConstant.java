@@ -5,11 +5,6 @@ package com.xianguo.hotserver.constants;
  * @author Xianguo
  */
 public class HttpConstant {
-	
-	/**
-	 * 服务器名称
-	 */
-	public final static String SERVER = "HotServer";
 	/**
 	 * 开发者名称
 	 */

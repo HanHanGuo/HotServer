@@ -13,6 +13,7 @@ import java.util.Map;
 import javax.servlet.Servlet;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
+import javax.servlet.http.HttpServlet;
 
 import com.xianguo.hotserver.bean.RequestInfo;
 import com.xianguo.hotserver.bean.ResponseBaseInfo;
@@ -43,7 +44,7 @@ public class ResponseHandle implements BaseHandle<RequestInfo, ResponseInfo> {
 		Map<String, String> responseMap = new HashMap<String, String>();
 		responseMap.put(HttpHeadName.DATE, sdf.format(new Date()));
 		//给返回头放入服务器信息
-		responseMap.put(HttpHeadName.SERVER, HttpConstant.SERVER);
+		responseMap.put(HttpHeadName.SERVER, ServerConstant.SERVER);
 		responseMap.put(HttpHeadName.DEVELOPER, HttpConstant.DEVELOPER);
 
 		ResponseBaseInfo responseBaseInfo = new ResponseBaseInfo();
@@ -52,16 +53,16 @@ public class ResponseHandle implements BaseHandle<RequestInfo, ResponseInfo> {
 
 		
   		String url = parameter.getRequestBaseInfo().getUrl();
-        Servlet servlet = ServletContainer.getServlet(url);
+        /*Servlet servlet = ServletContainer.getServlet(url);
         if(servlet != null) {
         	try {
-				servlet.service((HotServletRequest)parameter, (HotServletResponse)responseInfo);
+				((HttpServlet)servlet).service((HotServletRequest)parameter, (HotServletResponse)responseInfo);
 			} catch (ServletException e) {
 				responseBaseInfo.setStatus(HttpStatusCode.CODE_500);
 			} catch (IOException e) {
 				responseBaseInfo.setStatus(HttpStatusCode.CODE_404);
 			}
-        }
+        }*/
         
         //读取文件获得输入流
         //拼接访问文件地址并剃除问好

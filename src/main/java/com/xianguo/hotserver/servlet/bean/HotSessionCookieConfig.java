@@ -8,89 +8,89 @@ import javax.servlet.SessionCookieConfig;
  *
  */
 public class HotSessionCookieConfig implements SessionCookieConfig {
-
+	
+	private String name;
+	
+	private String domain;
+	
+	private String path;
+	
+	private String comment;
+	
+	private boolean httpOnly;
+	
+	private boolean secure;
+	
+	private int maxAge;
+	
 	@Override
 	public void setName(String name) {
-		// TODO Auto-generated method stub
-		
+		this.name = name;
 	}
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.name;
 	}
 
 	@Override
 	public void setDomain(String domain) {
-		// TODO Auto-generated method stub
-		
+		this.domain = domain;
 	}
 
 	@Override
 	public String getDomain() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.domain;
 	}
 
 	@Override
 	public void setPath(String path) {
-		// TODO Auto-generated method stub
-		
+		this.path = path;
 	}
 
 	@Override
 	public String getPath() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.path;
 	}
 
 	@Override
 	public void setComment(String comment) {
-		// TODO Auto-generated method stub
-		
+		this.comment = comment;
 	}
 
 	@Override
 	public String getComment() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.comment;
 	}
 
 	@Override
 	public void setHttpOnly(boolean httpOnly) {
-		// TODO Auto-generated method stub
-		
+		this.httpOnly = httpOnly;
 	}
 
 	@Override
 	public boolean isHttpOnly() {
-		// TODO Auto-generated method stub
-		return false;
+		return this.httpOnly;
 	}
 
 	@Override
 	public void setSecure(boolean secure) {
-		// TODO Auto-generated method stub
-		
+		this.secure = secure;
 	}
 
 	@Override
 	public boolean isSecure() {
-		// TODO Auto-generated method stub
-		return false;
+		return this.secure;
 	}
 
 	@Override
 	public void setMaxAge(int maxAge) {
-		// TODO Auto-generated method stub
-		
+		this.maxAge = maxAge;
 	}
 
 	@Override
 	public int getMaxAge() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.maxAge;
 	}
 
 }

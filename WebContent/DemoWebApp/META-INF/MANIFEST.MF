@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Spring-Boot-Classpath-Index: WEB-INF/classpath.idx
+Implementation-Title: DemoWebApp
+Implementation-Version: 1.0-SNAPSHOT
+Spring-Boot-Layers-Index: WEB-INF/layers.idx
+Start-Class: com.xx.App
+Spring-Boot-Classes: WEB-INF/classes/
+Spring-Boot-Lib: WEB-INF/lib/
+Build-Jdk-Spec: 1.8
+Spring-Boot-Version: 2.5.0
+Created-By: Maven WAR Plugin 3.3.1
+Main-Class: org.springframework.boot.loader.WarLauncher
+
